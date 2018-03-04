@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2b2d36</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#20dc23</color>
+    <color name="brightText">#a8fafafa</color>
+    <color name="darkBackground">#202020</color>
+    <color name="darkVideoOverlay">#41000000</color>
+    <color name="lightBackground">#1e000000</color>
+    <color name="textAccent">#838383</color>
+    <color name="fadedText">#b4202020</color>
+    <color name="divider">#cacaca</color>
+    <color name="darkDivider">#232323</color>
+    <color name="play_icon">#87000000</color>
+    <color name="transparent">#00000000</color>
+</resources>

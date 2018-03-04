@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="main_detail_display_height">272dp</dimen>
+    <dimen name="main_detail_display_height_land">236dp</dimen>
+    <dimen name="title_text_view_height">224dp</dimen>
+    <dimen name="title_view_margin_left">16dp</dimen>
+    <dimen name="title_view_padding_top">156dp</dimen>
+    <dimen name="title_view_padding_top_land">6dp</dimen>
+    <dimen name="rdate_view_margin_left">24dp</dimen>
+    <dimen name="poster_view_elevation">12dp</dimen>
+    <dimen name="poster_view_width">101dp</dimen>
+    <dimen name="movie_cl_detail_width">284dp</dimen>
+    <dimen name="poster_view_height">152dp</dimen>
+    <dimen name="poster_view_margin_bottom">16dp</dimen>
+    <dimen name="poster_view_margin_right">24dp</dimen>
+    <dimen name="overview_padding_top">16dp</dimen>
+    <dimen name="overview_details_padding">16dp</dimen>
+    <dimen name="rating_bar_height">20dp</dimen>
+    <dimen name="progress_anim_padding_bottom">224dp</dimen>
+    <dimen name="connecting_text_padding_top">48dp</dimen>
+    <dimen name="retry_button_margin_bottom">24dp</dimen>
+
+    <!-- Text Sizes -->
+    <dimen name="title_text_size">22sp</dimen>
+    <dimen name="connecting_text_size">24sp</dimen>
+    <dimen name="overview_details_text_size">16sp</dimen>
+    <dimen name="overview_text_size">14sp</dimen>
+
+</resources>

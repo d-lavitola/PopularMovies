@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/darkBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:paddingBottom="16dp"
+    android:layout_marginBottom="6dp"
+    android:orientation="vertical"
+    android:foreground="?android:attr/selectableItemBackground">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/review_username_tv"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:paddingBottom="6dp"
+        android:textColor="@color/brightText"
+        tools:text="UsernameExample"/>
+    <Utilities.ExpandableTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/review_content_tv"
+        android:textSize="16sp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@color/brightText"
+        tools:text="One thing that I liked about this movie from the start was that it was, in my limited experience at least, somewhat original. Yes it was an apocalypse story but I have really not seen anything quite like it before. Yes moving mazes and all that have been done but the story as a whole was new to me. That was refreshingly enjoyable in this age of more or less boring Hollywood remakes. On the whole I quite enjoyed the movie. I would label it a “young adult” movie. Not only because the lead characters as well as almost the entire cast are teenagers but the story itself is clearly at a level directed towards a younger audience. But then, who do not wish they were young again? I quite liked the story. It clearly had its usual collection of illogical moments and plot holes but nothing really really annoying as far as I am concerned. In my opinion all of the cast did a decent enough job of their roles. Some roles mostly consisted of standing around in the background of course but the lead characters was not bad. Teresa was more of a plot element than a lead character in this movie though that has to be said. I did indeed like the maze itself. It had a quite cool look and was well done from a cinematic point of view. The one thing that did not come out in the movie though was the reason for it all. I know that is supposed to be the mystery but it was rather frustrating nonetheless to not get any clues whatsoever. What on Earth could be the purpose of having a bunch of kids live through this experience in that way? Sometimes the behavior of these kids where somewhat annoying of course. I especially disliked the plot element where that dumbass kid seemed to just want everything to stay the same forever. It is of course a classical element in stories like this but it still annoys the hell out of me every time. Bottom line is still that I found this a rather enjoyable movie. I would definitely want to see the other two books made into movies as well. I have not read the books by the way so me thinking this was a new story experience is of course partly due to this fact."
+        />
+
+</LinearLayout>

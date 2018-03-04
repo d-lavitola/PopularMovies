@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_action_popular"
+        android:title="@string/popular"
+        android:onClick="sortPopular" />
+    <item
+        android:id="@+id/menu_action_top_rated"
+        android:title="@string/top_rated"
+        android:onClick="sortTopRated"/>
+    <item
+        android:id="@+id/menu_action_sort_favorites"
+        android:title="@string/favorites"
+        android:onClick="sortFavorites" />
+</menu>

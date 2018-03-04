@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fadedText"
+    tools:context="com.example.android.popularmoviesstage1.MovieDescriptionActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/rl_synopsis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="24dp">
+        <RelativeLayout
+            android:id="@+id/rl_title_release"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="6dp"
+            android:background="@color/darkBackground">
+
+            <ImageView
+                android:id="@+id/iv_background"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:alpha=".3"
+                android:background="@color/darkBackground"
+                android:contentDescription="@string/background_image"
+                android:scaleType="centerCrop" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="60dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="52dp"
+                android:gravity="center_horizontal"
+                android:paddingBottom="24dp"
+                android:id="@+id/etv_overview_land"
+                android:textColor="@color/brightText"
+                android:textSize="18sp"
+                tools:text="Will Rodman (James Franco), a scientist in San Francisco, is experimenting with a drug that he hopes will cure his father's (John Lithgow) Alzheimer's disease. After his work is deemed a failure, Will becomes the guardian of Caesar, an infant chimp who was exposed in-utero to Will's drug. Caesar displays unusual intelligence, and Will decides to continue his experiments secretly. But as Caesar's intellect and abilities grow, he comes to represent a threat to man's dominion over Earth."/>
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="@dimen/movie_cl_detail_width"
+                android:layout_height="wrap_content"
+                android:id="@+id/movie_detail_cl_land"
+                android:paddingTop="36dp"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:orientation="vertical"
+                android:layout_alignParentStart="true">
+
+                <ImageView
+                    android:id="@+id/iv_description_poster"
+                    android:layout_width="@dimen/poster_view_width"
+                    android:layout_height="@dimen/poster_view_height"
+                    android:layout_alignParentEnd="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginStart="12dp"
+                    android:contentDescription="@string/poster"
+                    android:elevation="@dimen/poster_view_elevation"
+                    android:src="@drawable/poster_loading"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/tv_movie_title"
+                    android:layout_width="142dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="18dp"
+                    android:shadowColor="@color/textAccent"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="2"
+                    android:textColor="@color/brightText"
+                    android:textSize="@dimen/title_text_size"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/iv_description_poster"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Rise of the Planet of the Apes" />
+
+                <TextView
+                    android:id="@+id/tv_release_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="8dp"
+                    android:textColor="@color/brightText"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.04"
+                    app:layout_constraintStart_toEndOf="@+id/iv_description_poster"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_movie_title"
+                    tools:text="January 1, 2000" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_below="@+id/tv_release_date"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintHorizontal_bias="0.04"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/iv_description_poster"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_release_date">
+
+                    <RatingBar
+                        android:id="@+id/rb_rating"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/rating_bar_height"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:isIndicator="true"
+                        android:stepSize=".1" />
+                </RelativeLayout>
+            </android.support.constraint.ConstraintLayout>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            style="@style/headerStyle"
+            android:elevation="8dp"
+            android:text="@string/trailers"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <include layout="@layout/empty_trailer_layout"
+                android:layout_height="168dp"
+                android:layout_width="match_parent"
+                android:id="@+id/empty_trailer_l"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="168dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:layout_marginBottom="8dp"
+                android:scrollbars="horizontal"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:orientation="horizontal"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:id="@+id/trailers_rv"/>
+        </RelativeLayout>
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/darkDivider" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/headerStyle"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="@string/reviews"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp">
+            <include layout="@layout/empty_reviews_layout"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/empty_reviews_l"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:id="@+id/reviews_rv"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

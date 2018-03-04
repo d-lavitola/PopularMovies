@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fadedText"
+    tools:context="com.example.android.popularmoviesstage1.MovieDescriptionActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/rl_synopsis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="24dp">
+        <RelativeLayout
+            android:id="@+id/rl_title_release"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/main_detail_display_height"
+            android:elevation="6dp"
+            android:background="@color/darkBackground">
+            <ImageView
+                android:id="@+id/iv_background"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:alpha=".3"
+                android:src="@drawable/backdrop_loading"
+                android:contentDescription="@string/background_image" />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true">
+                <TextView
+                    android:id="@+id/tv_movie_title"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/title_view_margin_left"
+                    android:paddingTop="@dimen/title_view_padding_top"
+                    android:gravity="bottom"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/title_text_size"
+                    android:textColor="@color/brightText"
+                    android:shadowColor="@color/textAccent"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="2"
+                    tools:text="Rise of the Planet of the Apes"/>
+                <TextView
+                    android:id="@+id/tv_release_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_movie_title"
+                    android:layout_marginLeft="@dimen/rdate_view_margin_left"
+                    android:textColor="@color/brightText"
+                    tools:text="January 1, 2000"/>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_release_date"
+                    android:layout_marginLeft="@dimen/rdate_view_margin_left" >
+                    <RatingBar
+                        android:id="@+id/rb_rating"
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:isIndicator="true"
+                        android:stepSize=".1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/rating_bar_height"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/iv_description_poster"
+                android:layout_width="@dimen/poster_view_width"
+                android:elevation="@dimen/poster_view_elevation"
+                android:layout_height="@dimen/poster_view_height"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/poster_view_margin_bottom"
+                android:layout_marginRight="@dimen/poster_view_margin_right"
+                android:contentDescription="@string/poster"
+                android:src="@drawable/poster_loading"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/brightText"
+            android:padding="4dp"
+            android:gravity="center"
+            android:textColor="@color/fadedText"
+            android:textSize="12sp"
+            android:text="OVERVIEW"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/overview_text_rl"
+            android:background="@color/brightText"
+            android:paddingStart="@dimen/overview_details_padding"
+            android:paddingEnd="16dp"
+            android:paddingTop="2dp">
+            <Utilities.ExpandableTextView
+                android:id="@+id/etv_overview"
+                android:gravity="center"
+                android:paddingBottom="26dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/overview_details_text_size"
+                tools:text="Will Rodman (James Franco), a scientist in San Francisco, is experimenting
+                with a drug that he hopes will cure his father's (John Lithgow) Alzheimer's disease.
+                After his work is deemed a failure, Will becomes the guardian of Caesar, an infant chimp
+                who was exposed in-utero to Will's drug. Caesar displays unusual intelligence, and Will
+                decides to continue his experiments secretly. But as Caesar's intellect and abilities
+                grow, he comes to represent a threat to man's dominion over Earth."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/show_more_button_tv"
+                android:paddingBottom="8dp"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:text="SHOW MORE"
+                android:gravity="end"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <!--<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/user_rating"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <RatingBar
+                    android:id="@+id/rb_rating"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:isIndicator="true"
+                    android:stepSize=".1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/rating_bar_height"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true" />
+            </RelativeLayout>
+        </LinearLayout>-->
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/darkDivider" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            style="@style/headerStyle"
+            android:elevation="8dp"
+            android:text="@string/trailers"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <include layout="@layout/empty_trailer_layout"
+                android:layout_height="168dp"
+                android:layout_width="match_parent"
+                android:id="@+id/empty_trailer_l"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="168dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:layout_marginBottom="8dp"
+                android:scrollbars="horizontal"
+                android:scrollbarAlwaysDrawHorizontalTrack="true"
+                android:orientation="horizontal"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:id="@+id/trailers_rv"/>
+        </RelativeLayout>
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/darkDivider" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/headerStyle"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:text="@string/reviews"/>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp">
+            <include layout="@layout/empty_reviews_layout"
+                android:layout_height="180dp"
+                android:layout_width="match_parent"
+                android:id="@+id/empty_reviews_l"/>
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:id="@+id/reviews_rv"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
