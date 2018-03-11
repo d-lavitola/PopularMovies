@@ -21,7 +21,7 @@ import static android.content.ContentValues.TAG;
 
 public class NetworkUtils {
 
-    public static final String MOVIE_DB_BASE_URL = "http://api.themoviedb.org/3/movie/";
+    private static final String MOVIE_DB_BASE_URL = "http://api.themoviedb.org/3/movie/";
     public static final String YOUTUBE_BASE_URL = "https://www.youtube.com/watch?v=";
 
     private static String api_key = "101415efb001431da44d27585bfea0bc";
@@ -64,12 +64,14 @@ public class NetworkUtils {
         return url;
     }
 
+    /** Builds string url for fetching reviews for a movie given a movie id */
     public static String constructReviewUrl(int movieId) {
         String reviewsRequestUrl = MOVIE_DB_BASE_URL + movieId + "/reviews?api_key=" + api_key;
         Log.i(TAG, "constructReviewUrl:url = " + reviewsRequestUrl);
         return reviewsRequestUrl;
     }
 
+    /** Builds string url for fetching videos for a movie given a movie id */
     public static String constructVideosUrl(int movieId) {
         String videoRequestUrl = MOVIE_DB_BASE_URL + movieId + "/videos?api_key=" + api_key;
         Log.i(LOG_TAG, "constructVideosUrl: " + videoRequestUrl);

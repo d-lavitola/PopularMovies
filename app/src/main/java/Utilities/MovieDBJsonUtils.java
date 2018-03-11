@@ -2,9 +2,9 @@ package Utilities;
 
 import android.util.Log;
 
-import com.example.android.popularmoviesstage1.Movie;
-import com.example.android.popularmoviesstage1.Review;
-import com.example.android.popularmoviesstage1.Video;
+import com.example.android.popularmovies.Movie;
+import com.example.android.popularmovies.Review;
+import com.example.android.popularmovies.Video;
 
 import org.json.JSONArray;
 import org.json.JSONException;

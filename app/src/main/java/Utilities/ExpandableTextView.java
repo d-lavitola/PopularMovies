@@ -5,7 +5,7 @@ import android.content.res.TypedArray;
 import android.text.SpannableStringBuilder;
 import android.util.AttributeSet;
 
-import com.example.android.popularmoviesstage1.R;
+import com.example.android.popularmovies.R;
 
 /**
  * Created by domeniclavitola on 9/8/17.
@@ -32,13 +32,6 @@ public class ExpandableTextView extends android.support.v7.widget.AppCompatTextV
         TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.ExpandableTextView);
         this.trimLength = typedArray.getInt(R.styleable.ExpandableTextView_trimLength, DEFAULT_TRIM_LENGTH);
         typedArray.recycle();
-
-//        setOnClickListener(new OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                ExpandableTextView.this.onClick();
-//            }
-//        });
     }
 
     private void setText() {
