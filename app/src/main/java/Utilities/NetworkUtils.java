@@ -24,7 +24,8 @@ public class NetworkUtils {
     private static final String MOVIE_DB_BASE_URL = "http://api.themoviedb.org/3/movie/";
     public static final String YOUTUBE_BASE_URL = "https://www.youtube.com/watch?v=";
 
-    private static String api_key = "101415efb001431da44d27585bfea0bc";
+    // API KEY STRING GOES HERE!!
+    private static final String api_key = "REPLACE ME WITH API KEY!!!!!";
     private static final String LOG_TAG = NetworkUtils.class.getName();
 
     // Create a method for making a network request for a url (as String)
