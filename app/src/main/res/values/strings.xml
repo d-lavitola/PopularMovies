@@ -25,4 +25,6 @@
     <string name="top_twenty">Top Twenty</string>
     <string name="top_rated_title">TOP RATED</string>
     <string name="favorites_title">Your Favorites</string>
+    <string name="show_more">SHOW MORE</string>
+    <string name="show_less">SHOW LESS</string>
 </resources>
